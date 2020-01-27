@@ -1,12 +1,25 @@
 {
   "name": "exzyle-demotivational-example",
   "version": "0.0.0",
-  "description": "Example service using exzyle-demotivational with error messages 😏",
+  "description": "Example server using exzyle-demotivational with error messages 😏",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
   "files": [
     "build/src"
   ],
+  "author": {
+    "name": "Exzyle",
+    "email": "exzyle@protonmail.com",
+    "url": "https://twitter.com/ExzyleFreedom"
+  },
+  "homepage": "https://exzyle.github.io/exzyle-demotivational-example/",
+  "bugs": {
+    "url": "https://github.com/ExZyle/exzyle-demotivational-example/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ExZyle/exzyle-demotivational-example.git"
+  },
   "license": "GPL-3.0-only",
   "keywords": [
     "example",
