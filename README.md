@@ -1,55 +1,42 @@
-# Exzyle Demotivational
+# Exzyle Demotivational Example Website
 
-[![Build Status](https://travis-ci.com/ExZyle/exzyle-demotivational.svg?branch=master)](https://travis-ci.com/ExZyle/exzyle-demotivational)
-![GitHub repo size](https://img.shields.io/github/repo-size/exzyle/exzyle-demotivational)
-![GitHub contributors](https://img.shields.io/github/contributors/exzyle/exzyle-demotivational)
+[![Build Status](https://travis-ci.com/ExZyle/exzyle-demotivational.svg?branch=master)](https://travis-ci.com/ExZyle/exzyle-demotivational-example)
+![GitHub repo size](https://img.shields.io/github/repo-size/exzyle/exzyle-demotivational-example)
+![GitHub contributors](https://img.shields.io/github/contributors/exzyle/exzyle-demotivational-example)
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://opensource.org/licenses/GPL-3.0)
 [![TradingView Follow @ExZyle](https://img.shields.io/badge/TradingView-%40ExZyle-brightgreen)](https://tradingview.com/u/ExZyle)
 
-Exzyle-Demotivational is a `utility` that provides ` nihilistic and depressing messages` allowing `developers` to `have some fun appending to error messages`.
-
-## Prior-Art
-Thanks to [joranE/demotivr](https://github.com/joranE/demotivr
-) for demotivationals and discouragement 😏.
+Exzyle-Demotivational-Example is a `node web server` that provides `example usage of exzyle-demotivational` allowing `developers` to `implement nihilistic errors in their messages`.
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 * You have installed the latest version of `node`
 
-## Installing exzyle-demotivational
+## Installing exzyle-demotivational-example
 
-To install exzyle-demotivational, follow these steps:
+To install exzyle-demotivational-example, follow these steps:
 
-Using `npm`:
+Using `https`:
 ```
-npm i exzyle-demotivational
-```
-
-Using `yarn`:
-```
-yarn add exzyle-demotivational
-```
-## Using exzyle-demotivational
-
-To use exzyle-demotivational, simply `require` or `import` the module.
-
-Using node
-```
-const { demotivate } = require('exzyle-demotivational');
-
-throw new Error(`Missing required parameters. ${demotivate()}`);
-
+git clone git@github.com:ExZyle/exzyle-demotivational-example.git
+cd exzyle-demotivational-example
+npm i
 ```
 
-Using typescript
+Using `ssh`:
 ```
-import { demotivate } as from 'exzyle-demotivational';
-
-throw new Error(`Missing required parameters. ${demotivate()}`);
+git clone https://github.com/ExZyle/exzyle-demotivational-example.git
+cd exzyle-demotivational-example
+npm i
 ```
 
-## Contributing to exzyle-demotivational
+## Using exzyle-demotivational-example
+Run `npm start` then simply visit one of:
+* http://localhost:8080/demotivate - for a simple nihilistic demotivating quote.
+* http://localhost:8080/error - for random HTTP errors having nihilistic demotivating messages.
+
+## Contributing to exzyle-demotivational-example
 To contribute to exzyle-demotivational, follow these steps:
 
 1. Fork this repository.
