@@ -4,6 +4,13 @@ import createRandomError = require('./create-error');
 
 const server = restify.createServer({ name: 'Demotivational' });
 
+server.get('/', (req, res, next) => {
+  res.send(
+    'To see this in action, visit either /demotivate for demotivational quotes or /error for random demotivating http server errors.'
+  );
+  next();
+});
+
 server.get('/demotivate', (req, res, next) => {
   const demotivational = demotivate();
   res.send(demotivational);
