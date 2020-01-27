@@ -32,6 +32,13 @@ npm i
 ```
 
 ## Using exzyle-demotivational-example
+
+### Deploy to Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ExZyle/exzyle-demotivational-example)
+
+### Run locally
+
 Run `npm start` then simply visit one of:
 * http://localhost:8080/demotivate - for a simple nihilistic demotivating quote.
 * http://localhost:8080/error - for random HTTP errors having nihilistic demotivating messages.
