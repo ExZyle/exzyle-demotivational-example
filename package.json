@@ -1,0 +1,43 @@
+{
+  "name": "exzyle-demotivational-example",
+  "version": "0.0.0",
+  "description": "Example service using exzyle-demotivational with error messages 😏",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "files": [
+    "build/src"
+  ],
+  "license": "GPL-3.0-only",
+  "keywords": [
+    "example",
+    "random-quote-machine",
+    "nihilism",
+    "fun",
+    "error-messages",
+    "messages",
+    "exzyle-demotivational"
+  ],
+  "scripts": {
+    "start": "node build/src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check"
+  },
+  "devDependencies": {
+    "@types/node": "^10.0.3",
+    "@types/restify": "^8.4.2",
+    "@types/restify-errors": "^4.3.3",
+    "gts": "^1.1.2",
+    "typescript": "~3.7.0"
+  },
+  "dependencies": {
+    "exzyle-demotivational": "^1.0.1",
+    "restify": "^8.5.1",
+    "restify-errors": "^8.0.2"
+  }
+}
