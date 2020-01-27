@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+  </head>
+  <body class="bg-dark fg-white">
+    <h1 class="text-center">Demotivational.</h1>
+    <h3 class="text-center">Nihilistic Demotivators For Your Shattered Psyche.</h3>
+    <div data-role="cube"></div>
+    <div class="text-center">
+        <button id="demotivateButton" class="command-button large warning" data-role="ripple">
+            <span class="caption">Demotivate Me</span>
+        </button>
+    </div>
+    <div class="text-center dark">
+        <h1 id="demotivator">bottom</h1>
+    </div>
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+    <script>
+        const demotivator = $('#demotivator');
+        demotivator.hide();
+        let visible = false;
+        function showDemotivational(demotivational) {
+            demotivator.text(demotivational);
+            demotivator.fadeIn(1000, () => visible = true);
+        }
+        $('#demotivateButton').on('click', async function() {
+            const demotivational = await (await fetch('/demotivate')).text()
+            console.log(demotivational);
+            if (visible) {
+                demotivator.fadeOut(500, function() {
+                    visible = false;
+                    showDemotivational(demotivational);
+                });
+            } else {
+                showDemotivational(demotivational);
+            }
+        });
+    </script>
+  </body>
+</html>
