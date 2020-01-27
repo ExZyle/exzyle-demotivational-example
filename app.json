@@ -1,0 +1,15 @@
+{
+    "name": "Exzyle Demotivational Example",
+    "description": "Example server using exzyle-demotivational with error messages 😏",
+    "repository": "https://github.com/ExZyle/exzyle-demotivational-example",
+    "logo": "https://avatars0.githubusercontent.com/u/59041207?s=460&v=4",
+    "keywords": [
+        "example",
+        "random-quote-machine",
+        "nihilism",
+        "fun",
+        "error-messages",
+        "messages",
+        "exzyle-demotivational"    
+    ]
+  }
